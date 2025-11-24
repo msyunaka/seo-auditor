@@ -47,7 +47,7 @@ def google_search(query, api_key, cse_id, num_results=50):
                     q=query,
                     cx=cse_id,
                     start=start_index,
-                    num=10,        # Máximo permitido por vez
+                    num=100,        # Máximo permitido por vez
                     filter='0'     # <--- O SEGREDO: Traz resultados que o Google ocultaria
                 ).execute()
                 
